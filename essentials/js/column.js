@@ -1,6 +1,6 @@
 var config = {
   content: [{
-    type: 'row',
+    type: 'column',
     content: [
         {
           type:'component',
