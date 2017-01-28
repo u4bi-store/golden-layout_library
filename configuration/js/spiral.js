@@ -10,7 +10,12 @@ var config = {
         closePopoutsOnUnload: true,
         showPopoutIcon: true,
         showMaximiseIcon: true,
-        showCloseIcon: true */
+        showCloseIcon: true
+        
+            https://www.golden-layout.com/docs/Config.html
+        */
+        showPopoutIcon: false, /* 팝업 버튼 비활성화*/
+        showCloseIcon: false /* 닫기 버튼 비활성화*/
 		},
       labels: {
       close: '닫기',
@@ -19,7 +24,8 @@ var config = {
       popout: '새창에서 열기'
     },
 		dimensions: {
-			borderWidth: 2
+			borderWidth: 10, /* 컴포넌트간의 보더 간격*/
+      headerHeight: 30 /* 헤더와 컴포넌트간의 간격*/
 		},
 		content: [{
 			type: 'row', /* 메인*/
