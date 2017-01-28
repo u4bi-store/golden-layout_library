@@ -1,5 +1,16 @@
 var config = {
 		settings: {
+        /* 디폴트 셋업값
+        hasHeaders: true,
+        constrainDragToContainer: true,
+        reorderEnabled: true,
+        selectionEnabled: false,
+        popoutWholeStack: false,
+        blockedPopoutsThrowError: true,
+        closePopoutsOnUnload: true,
+        showPopoutIcon: true,
+        showMaximiseIcon: true,
+        showCloseIcon: true */
 		},
 		dimensions: {
 			borderWidth: 2
