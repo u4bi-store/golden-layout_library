@@ -15,7 +15,7 @@ var config = {
             https://www.golden-layout.com/docs/Config.html
         */
         showPopoutIcon: false, /* 팝업 버튼 비활성화*/
-        showCloseIcon: false /* 닫기 버튼 비활성화*/
+        // showCloseIcon: false /* 닫기 버튼 비활성화*/
 		},
       labels: {
       close: '닫기',
@@ -61,13 +61,15 @@ var config = {
                                     type: 'component', /* 로우안에 첫번째 컴포넌트를 지정해줌*/
                                     componentName: '두번째 컬럼에 있는 로우의 첫번째 컴포넌트',
                                     height: 50,
-                                    componentState: { color: '#1D84BD' }
+                                    componentState: { color: '#1D84BD' },
+                                    isClosable: false /* 아이템 셋업 닫기가 가능한지 @ false 비활성*/
                                 },
                                 {
                                     type: 'component', /* 로우안에 두번째 컴포넌트를 지정해줌*/
                                     componentName: '두번째 컬럼에 있는 로우의 두번째 컴포넌트',
                                     height: 50,
-                                    componentState: { color: '#F15C25' }
+                                    componentState: { color: '#F15C25' },
+                                    isClosable: false /* 아이템 셋업 닫기가 가능한지 @ false 비활성*/
                                 }
                             ]
 				              }
