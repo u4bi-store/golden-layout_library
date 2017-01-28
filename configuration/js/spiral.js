@@ -37,12 +37,14 @@ var config = {
                                 {
                                     type: 'component', /* 로우안에 첫번째 컴포넌트를 지정해줌*/
                                     componentName: '두번째 컬럼에 있는 로우의 첫번째 컴포넌트',
-                                    height: 50
+                                    height: 50,
+                                    componentState: { color: '#1D84BD' }
                                 },
                                 {
                                     type: 'component', /* 로우안에 두번째 컴포넌트를 지정해줌*/
                                     componentName: '두번째 컬럼에 있는 로우의 두번째 컴포넌트',
-                                    height: 50
+                                    height: 50,
+                                    componentState: { color: '#F15C25' }
                                 }
                             ]
 				              }
@@ -57,7 +59,11 @@ var myLayout = new GoldenLayout(config);
 myLayout.registerComponent('첫번째 컬럼', function(container, state) {});
 
 myLayout.registerComponent('두번째 컬럼의 컴포넌트', function(container, state) {});
-myLayout.registerComponent('두번째 컬럼에 있는 로우의 첫번째 컴포넌트', function(container, state) {});
-myLayout.registerComponent('두번째 컬럼에 있는 로우의 두번째 컴포넌트', function(container, state) {});
+myLayout.registerComponent('두번째 컬럼에 있는 로우의 첫번째 컴포넌트', function(container, state) {
+  container.getElement().css('background-color', state.color);
+});
+myLayout.registerComponent('두번째 컬럼에 있는 로우의 두번째 컴포넌트', function(container, state) {
+  container.getElement().css('background-color', state.color);
+});
 
 myLayout.init();
