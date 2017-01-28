@@ -12,6 +12,12 @@ var config = {
         showMaximiseIcon: true,
         showCloseIcon: true */
 		},
+      labels: {
+      close: '닫기',
+      maximise: '최대화',
+      minimise: '최소화',
+      popout: '새창에서 열기'
+    },
 		dimensions: {
 			borderWidth: 2
 		},
